@@ -1,11 +1,9 @@
-module.exports = {
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/contact",
-        permanent: true,
-      },
-    ];
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  compiler: {
+    styledComponents: true,
   },
+  reactStrictMode: true,
 };
+
+module.exports = nextConfig;
